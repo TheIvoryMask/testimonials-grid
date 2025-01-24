@@ -1,0 +1,170 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    color: hsl(0, 0%, 81%);
+    font-family: "Barlow Semi Condensed", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 2 1;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 875px;
+}
+
+.right {
+    display: flex;
+    max-width: 300px;
+    /* margin-left: -20px; */
+    height: 634px;
+}
+
+.quote {
+    margin-left: auto;
+    position: absolute;
+    z-index: 0;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 20px 35px rgb(0 0 0 / 20%);
+}
+
+
+.purple {
+    background-color: hsl(263, 55%, 52%);
+    width: 500px;
+    z-index: 0;
+}
+
+.purple h3 {
+    color: white;
+    font-weight: 500;
+    z-index: 1;
+}
+
+.grey {
+    background-color: hsl(217, 19%, 35%);
+    width: 250px;
+}
+
+.grey h3 {
+    color: white;
+    font-weight: 400;
+}
+
+.white {
+    background-color: white;
+    color: black;
+    width: 250px;
+}
+
+.black {
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+    width: 500px;
+}
+
+.long {
+    width: 250px;
+    background: white;
+    color: hsl(217, 19%, 35%);
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.author-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px hsl(0, 0%, 81%);
+}
+
+p {
+    margin: 0;
+}
+
+.text {
+    font-weight: 400;
+    padding: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 100%;   
+    }
+
+    .left {
+        max-width: 100%;
+    }
+
+    .right {
+        max-width: 100%;
+        margin-top: 20px;
+        height: fit-content;
+    }
+
+    .quote {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+
+    .purple {
+        width: 100%;
+    }
+
+    .black {
+        width: 100%;
+    }
+
+    .grey {
+        width: 100%;
+    }
+
+    .white {
+        width: 100%;
+    }
+
+    .long {
+        max-width: 100%;
+    }
+    
+}
